@@ -8,9 +8,13 @@ Poject is created with:
 ## Projects
 * [One Page Website](https://github.com/TnTien/Tech-Academy-Projects/tree/main/HTML-and-CSS-Projects/Project)
 * [Movie Theater Site](https://github.com/TnTien/Tech-Academy-Projects/tree/main/HTML-and-CSS-Projects/Bootstrap4_Project)
+* [Personal Portfolio](https://github.com/TnTien/Tech-Academy-Projects/tree/main/HTML-and-CSS-Projects/Portfolio)
 
 ### One Page Website
 This site is an example of a home page that displays a photo gallery. It is styled using CSS and contains a navbar, image containers, and a form.
 
 ### Move Theater Site
 This is an example home page for a move theater that is styled using Bootstrap 4.
+
+### Personal Portfolio
+This my personal portfolio. This site displays some of the things I learned with HTML and CSS.
