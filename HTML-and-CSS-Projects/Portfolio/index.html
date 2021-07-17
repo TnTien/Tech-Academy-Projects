@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tien Nguyen</title>
+    <link rel="stylesheet" href="./css/portfolio.css">
+</head>
+
+<body class="background">
+    <!-- Navbar-->
+    <nav class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#github">GitHub</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Jumbotron -->
+    <!-- Background video-->
+    <div id="home">
+        <video autoplay muted loop id="moon_video">
+            <source src="./videos/moon2.mp4" type="video/mp4">
+            <!-- Display mesage if video fails to run -->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <!-- Video Text-->
+    <div class="video_text">
+        <h1 class="white-text">Tien's Portfolio</h1>
+        <strong>
+            <p class="center">
+                <q>The computer programmer is a creater of universes for which he alone is the lawgiver.
+                    <br>No Playwright, no stage director, no emperor, however powerful, has ever exercised such absolute
+                    authority to arrange a stage or
+                    <br>fild of battle and to command such unswervingly dutiful actors or troops.
+                </q>
+                <br>-Joseph Weizenbaum
+                <br>
+                <br>My name is Tien. Welcome to my portfolio website. On it, I will tell you about my background and
+                experience.
+                <br>
+                <br>Thank you for stopping by and enjoy!
+            </p>
+        </strong>
+    </div>
+    <!-- End of Jumbotron-->
+
+    <!-- About -->
+    <div class="row" id="about">
+        <!-- Left -->
+        <div class="column_img column">
+            <img src="./images/workspace.jpg" alt="workstation">
+        </div>
+        <!-- Right -->
+        <div class="column_txt column">
+            <h1>About</h1>
+            <p>
+                I am a student of <a href="http://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp.
+                <br>
+                <br>At the end of the bootcamp, I will have some experience in the following web and
+                programming languages: HTML, CSS, JavaScript, SQL, C#, and more.
+                <br>
+                <br>I would love to work with you on your project. <a
+                    href="#contact">Contact</a> me below!
+            </p>
+        </div>
+    </div>
+    <!-- End of About -->
+
+    <!-- GitHub -->
+    <div class="row" id="github">
+        <!-- Left -->
+        <div class="column_txt column column2">
+            <h1>GitHub</h1>
+            <p>
+                You can view my coding projects on my GitHub profile here:
+                <br>
+            <p class="center"><a href="https://github.com/TnTien" target="_blank">My GitHub</a></p>
+            </p>
+        </div>
+        <!-- Right -->
+        <div class="column_img column">
+            <a href="https://github.com/TnTien"><img src="./images/GitHub.png" alt="GitHub Logo"></a>
+        </div>
+    </div>
+    <!-- End of GitHub -->
+
+    <!-- Contact -->
+    <div class="row" id="contact">
+        <!-- Left, Contact image-->
+        <div class="column_img column_tall column">
+            <img src="./images/enter.jpg" alt="picture of a tunnel">
+        </div>
+        <!-- Right, Contact Form-->
+        <div class="column_txt column_tall column">
+            <h1>Contact</h1>
+            <form action="" method="post">
+                <label>Name:</label>
+                    <input type="text" placeholder="Please enter your name here">
+                <label>Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Please enter your email here">
+                <label>Message:</label>
+                    <input type="text" id="message" name="message" placeholder="Please write your message here">
+                    <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+    <!-- End of Contact-->
+
+    <!-- Footer -->
+    <footer>
+        <p class="center">I am a student of <a href="http://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp.</p>
+    </footer>
+    <!-- End of Footer-->
+
+
+</body>
+
+</html>

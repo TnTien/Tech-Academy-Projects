@@ -1,0 +1,290 @@
+/* General Styling */
+body {
+    margin: 0%;
+    background-color: #E1E2E2;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", Optima;
+    text-align: center;
+    margin-top: 3%;
+    color: #1a1a1a;
+}
+
+h1:hover {
+    filter: grayscale(5%);
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.white-text {
+    color: #fff;
+}
+
+p {
+    font-family: Perpetua, "Rockwell Extra Bold";
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p:hover {
+    transition: transform 1s;
+    transform: scale(1.01);
+}
+
+.center {
+    text-align: center;
+}
+
+.center:hover {
+    transition: transform 2s;
+    transform: scale(1.1);
+}
+
+a {
+    color: blue;
+}
+
+q {
+    font-style: italic;
+}
+
+img {
+    filter: grayscale(75%);
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img:hover {
+    filter: grayscale(5%);
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 576px) {
+    img {
+        height: 300px;
+        margin: auto;
+    }
+}
+
+footer {
+    padding: 2%;
+    background-color: white;
+}
+
+/* Nav Bar */
+.navbar {
+    overflow: hidden;
+    background-color: #1D2228;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 0.5s;
+    animation: moveNav 0.5s;
+}
+
+@keyframes moveNav {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Avant Garde", Helvetica;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 1s;
+    animation: moveNavText 1s;
+}
+
+@keyframes moveNavText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+@media screen and (max-width: 925px) {
+    .navbar a {
+        width: 25%;
+        font-size: 12px;
+    }
+}
+
+.navbar a:hover {
+    background-color: #f4f4f4;
+    color: black;
+    font-weight: bold;
+}
+
+.navbar a.active {
+    background-color: darkgray;
+}
+
+/* Video */
+#moon_video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 997px) {
+    #moon_video {
+        display: none;
+    }
+}
+
+/* Text over video */
+.video_text {
+    background: rgba(29,34,40, 0.5);
+    color: white;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    -webkit-animation: moveVideoText 1s;
+    animation: moveVideoText 1s;
+}
+
+@keyframes moveVideoText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+@media screen and (max-width: 1280px) {
+    .video_text {
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .video_text {
+        padding-top: 35px;
+    }
+}
+
+/* Table */
+* {
+    box-sizing: border-box;
+}
+
+.column_txt {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: #E1E2E2;
+}
+
+@media screen and (max-width: 576px) {
+    .column_txt {
+        overflow: auto;
+    }    
+}
+
+.column_img {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: #1D2228;
+}
+
+.column_tall {
+    padding: 3.5%;
+    height: 500px;
+}
+
+.row::after {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+/* Added this code so that when the screen is smaller than a certain width, it'll collapse into one column */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+.column2 {
+    order: 1;
+}
+/*This is so that in the 2nd row, when the column becomes one, the image and text reverses
+    so that you get: image, text, image, text, image, text instead of image, text, text, image, image text */
+@media screen and (min-width: 915px) {
+    .column {
+        flex: 1;
+    } 
+    .column2 {
+        order: -1;
+    }
+}
+
+/* Contact Form */
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #E1E2E2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Perpetua, "Rockwell Extra Bold";
+}
+
+input[type=text]:hover {
+    box-shadow: 0 0 5px #00004d inset;
+}
+
+input[type=submit] {
+    background-color: #FB8122;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Perpetua, "Rockwell Extra Bold";
+}
+
+input[type=submit]:hover {
+    background-color: #1D2228;
+    color: white;
+    transform: scale(1.5);
+    transition: transform 1.5s;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #E1E2E2;
+    font-family: "Trebuchet MS", Optima;
+}
