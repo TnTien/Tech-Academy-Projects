@@ -6,8 +6,8 @@ Poject is created with:
 * CSS
 
 ## Projects
-* One Page Website
-* Movie Theater Site
+* [One Page Website](https://github.com/TnTien/Tech-Academy-Projects/tree/main/HTML-and-CSS-Projects/Project)
+* [Movie Theater Site](https://github.com/TnTien/Tech-Academy-Projects/tree/main/HTML-and-CSS-Projects/Bootstrap4_Project)
 
 ### One Page Website
 This site is an example of a home page that displays a photo gallery. It is styled using CSS and contains a navbar, image containers, and a form.
