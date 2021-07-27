@@ -7,5 +7,5 @@ function myDictionary() {
         Sound: "Quack"
     };
     delete Animal.Color; // Deletes key Color from Animal object
-    document.getElementById("Dictionary").innerHTML = Animal.Color; // Displays the value of the Color key
+    document.getElementById("Dictionary").innerHTML = Animal.Sound; // Displays the value of the Color key
 }
