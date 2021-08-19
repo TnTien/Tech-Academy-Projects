@@ -4,14 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Grand Tour!</title>
-    <!--Temp-->
-    <style>
-        img{
-            width: 400px;
-            height: 300px;
-        }
-    </style>
-    <!--Temp-->
     <link rel="stylesheet" href="./css/one_page_website.css">
 </head>
 
@@ -49,83 +41,166 @@
     <section>
         <div id="gallery">
             <h1>Gallery</h1>
-            <div>
+
+            <div class="row">
 
                 <!-- PHOTO-CONTAINER 1 -->
-                <div>
-                    <div>
-                        <img src="./images/image_1.jpg" alt="Landscape">
-                    </div>
+                <div class="column">
+                    <img src="./images/image_1.jpg" alt="Landscape" onclick="openModal();currentSlide(1)"
+                        class="hover-shadow">
                 </div>
                 <!-- END PHOTO-CONTAINER 1 -->
-                
 
                 <!-- PHOTO-CONTAINER 2 -->
-                <div>
-                    <div>
-                        <img src="./images/image_2.jpg" alt="Landscape">
-                    </div>
+                <div class="column">
+                    <img src="./images/image_2.jpg" alt="Landscape" onclick="openModal();currentSlide(2)"
+                        class="hover-shadow">
                 </div>
                 <!-- END PHOTO-CONTAINER 2 -->
 
                 <!-- PHOTO-CONTAINER 3 -->
-                <div>
-                    <div>
-                        <img src="./images/image_3.jpg" alt="Landscape">
-                    </div>
+                <div class="column">
+                    <img src="./images/image_3.jpg" alt="Landscape" onclick="openModal();currentSlide(3)"
+                        class="hover-shadow">
                 </div>
                 <!-- END PHOTO-CONTAINER 3 -->
 
                 <!-- PHOTO-CONTAINER 4 -->
-                <div>
-                    <div>
-                        <img src="./images/image_4.jpg" alt="Landscape">
-                    </div>
+                <div class="column">
+                    <img src="./images/image_4.jpg" alt="Landscape" onclick="openModal();currentSlide(4)"
+                        class="hover-shadow">
                 </div>
                 <!-- END PHOTO-CONTAINER 4 -->
 
                 <!-- PHOTO-CONTAINER 5 -->
-                <div>
-                    <div>
-                        <img src="./images/image_5.jpg" alt="Landscape">
-                    </div>
+                <div class="column">
+                    <img src="./images/image_5.jpg" alt="Landscape" onclick="openModal();currentSlide(5)"
+                        class="hover-shadow">
                 </div>
                 <!-- END PHOTO-CONTAINER 5 -->
 
                 <!-- PHOTO-CONTAINER 6 -->
-                <div>
-                    <div>
-                        <img src="./images/image_6.jpg" alt="Landscape">
-                    </div>
+                <div class="column">
+                    <img src="./images/image_6.jpg" alt="Landscape" onclick="openModal();currentSlide(6)"
+                        class="hover-shadow">
                 </div>
                 <!-- END PHOTO-CONTAINER 6 -->
 
                 <!-- PHOTO-CONTAINER 7 -->
-                <div>
-                    <div>
-                        <img src="./images/image_7.jpg" alt="Landscape">
-                    </div>
+                <div class="column">
+                    <img src="./images/image_7.jpg" alt="Landscape" onclick="openModal();currentSlide(7)"
+                        class="hover-shadow">
                 </div>
                 <!-- END PHOTO-CONTAINER 7 -->
 
                 <!-- PHOTO-CONTAINER 8 -->
-                <div>
-                    <div>
-                        <img src="./images/image_8.jpg" alt="Landscape">
-                    </div>
+                <div class="column">
+                    <img src="./images/image_8.jpg" alt="Landscape" onclick="openModal();currentSlide(8)"
+                        class="hover-shadow">
                 </div>
                 <!-- END PHOTO-CONTAINER 8 -->
 
                 <!-- PHOTO-CONTAINER 9 -->
-                <div>
-                    <div>
-                        <img src="./images/image_9.jpg" alt="Landscape">
-                    </div>
+                <div class="column">
+                    <img src="./images/image_9.jpg" alt="Landscape" onclick="openModal();currentSlide(9)"
+                        class="hover-shadow">
                 </div>
                 <!-- END PHOTO-CONTAINER 9 -->
 
             </div>
+
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 9</div>
+                        <img src="./images/image_1.jpg" style="width: 100%;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 9</div>
+                        <img src="./images/image_2.jpg" style="width: 100%;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 9</div>
+                        <img src="./images/image_3.jpg" style="width: 100%;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 9</div>
+                        <img src="./images/image_4.jpg" style="width: 100%;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 9</div>
+                        <img src="./images/image_5.jpg" style="width: 100%;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 9</div>
+                        <img src="./images/image_6.jpg" style="width: 100%;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 9</div>
+                        <img src="./images/image_7.jpg" style="width: 100%;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 9</div>
+                        <img src="./images/image_8.jpg" style="width: 100%;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">9 / 9</div>
+                        <img src="./images/image_9.jpg" style="width: 100%;">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail Image Controls-->
+                    <div class="column2">
+                    <img class="demo" src="./images/image_1.jpg" onclick="currentSlide(1)" alt="">
+                    </div>
+                    <div class="column2">
+                    <img class="demo" src="./images/image_2.jpg" onclick="currentSlide(2)" alt="">
+                    </div>
+                    <div class="column2">
+                    <img class="demo" src="./images/image_3.jpg" onclick="currentSlide(3)" alt="">
+                    </div>
+                    <div class="column2">
+                    <img class="demo" src="./images/image_4.jpg" onclick="currentSlide(4)" alt="">
+                    </div>
+                    <div class="column2">
+                    <img class="demo" src="./images/image_5.jpg" onclick="currentSlide(5)" alt="">
+                    </div>
+                    <div class="column2">
+                    <img class="demo" src="./images/image_6.jpg" onclick="currentSlide(6)" alt="">
+                    </div>
+                    <div class="column2">
+                    <img class="demo" src="./images/image_7.jpg" onclick="currentSlide(7)" alt="">
+                    </div>
+                    <div class="column2">
+                    <img class="demo" src="./images/image_8.jpg" onclick="currentSlide(8)" alt="">
+                    </div>
+                    <div class="column2">
+                    <img class="demo" src="./images/image_9.jpg" onclick="currentSlide(9)" alt="">
+                    </div>
+
+                </div>
+            </div>
         </div>
+
     </section>
     <!-- END OF GALLERY-->
 
@@ -153,7 +228,7 @@
         <p>Copyright &copy; 2021 Outdoor Adventure!</p>
     </footer>
     <!-- END OF FOOTER -->
-
+    <script src="./JS/one_page_website.js"></script>
 </body>
 
 </html>
