@@ -8,7 +8,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
     <script>
+        // When page is loaded up will call function
         $(document).ready(function() {
+            // Adds the elements to the html documtn
             $("html").append(
                 "<body>\
                     <div id='container'>\
@@ -21,7 +23,9 @@
                     </div>\
                 </body>"
             );
+            // Changes the style of ID 2
             $("#2").css({"color":"red"});
+            // Will hide the element with ID 3 and change h1 element to blue
             $('#3').click(function() {
                 $('h1').css({"color":"blue"});
                 $('#3').hide();
